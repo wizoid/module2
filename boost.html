@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Буст аккаунта</title>
+</head>
+<body>
+    <form method="POST" action="index.php">
+        <label for="name">Ваше имя</label>
+        <input type="text" name="name">
+<br>
+        <label for="name">Номер телефона</label>
+        <input type="number" name="num">
+<br>
+        <label for="oplata">Способ оплаты</label>
+        <input list="oplata"></p>
+        <datalist id="oplata">
+            <option>Банковская карта</option>
+            <option>Qiwi кошелек</option>
+            <option>Баланс телефона</option>
+            <option>Криптовалюта</option>
+            <option>Органы родных</option>
+        </datalist> 
+<br>
+        <label for="min">Ваш рейтинг (в ммр)</label>
+        <input type="number" name="min" min="0">
+<br>
+        <label for="max">До какого рейтинга буст (в ммр)</label>
+        <input type="number" name="max" min="1000">
+
+        <input type="submit" value="Перейти к заказу">
+    </form>
+</body>
+</html>
